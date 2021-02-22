@@ -14,6 +14,9 @@ public class card_add extends AppCompatActivity {
         setContentView(R.layout.add_card_new);
 
         //TODO add spinner activity to show different fragments for different kinds of cards
+
+
+
     }
 
 }
