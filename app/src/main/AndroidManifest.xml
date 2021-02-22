@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".controller.deck_list"/>
+        <activity android:name=".controller.card_list"/>
     </application>
 
 </manifest>
