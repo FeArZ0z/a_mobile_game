@@ -26,6 +26,7 @@ public class deck_add extends AppCompatActivity {
                 if (TextUtils.isEmpty(name.getText().toString())){
                     Toast.makeText(getApplicationContext(), "Name cannot be empty!", Toast.LENGTH_SHORT).show();
                 } else {
+
                     Toast.makeText(getApplicationContext(), "Proceed...", Toast.LENGTH_SHORT).show();
                     addQuestionToDeck();
                 }
