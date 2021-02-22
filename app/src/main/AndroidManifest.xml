@@ -19,6 +19,7 @@
         <activity android:name=".controller.deck_list"/>
         <activity android:name=".controller.deck_add"/>
         <activity android:name=".controller.card_list"/>
+        <activity android:name=".controller.deck_add_question"/>
     </application>
 
 </manifest>

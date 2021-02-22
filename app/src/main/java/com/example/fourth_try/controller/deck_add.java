@@ -1,5 +1,6 @@
 package com.example.fourth_try.controller;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -26,11 +27,15 @@ public class deck_add extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Name cannot be empty!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "Proceed...", Toast.LENGTH_SHORT).show();
+                    addQuestionToDeck();
                 }
 
             }
         });
     }
 
-
+    public void addQuestionToDeck(){
+        Intent openAddQ = new Intent(this, deck_add_question.class);
+        startActivity(openAddQ);
+    }
 }
