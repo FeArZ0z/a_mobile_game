@@ -1,7 +1,10 @@
 package com.example.fourth_try.controller;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,8 +17,23 @@ public class card_list extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.card_list);
+
+        Button addQuestion = (Button) findViewById(R.id.button_add_card);
+        addQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openAdd();
+            }
+        });
+
+        //TODO Add Spinner Activity to change shown kinds of cards
     }
 
+
+    public void openAdd() {
+        Intent openAdd = new Intent(this, card_add.class);
+        startActivity(openAdd);
+    }
 
     /**
      * Confirmation to delete an item
